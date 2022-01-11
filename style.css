@@ -257,3 +257,16 @@ header .titre button:hover{
         top: 40.5%;
     }
 }
+
+@media screen and (max-height : 650px) and (min-height : 500px){
+    header .image{
+        top: 36%;
+    }
+
+    header .titre{
+        left: 12%;
+        bottom: 54%;
+        padding: 30px;
+        font-size: 15px;
+    }
+}
