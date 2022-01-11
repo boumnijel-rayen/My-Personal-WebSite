@@ -18,12 +18,13 @@
         <div class="navigation">
         <nav>
             <div class="logo"><a href="#"><img src="img/logo.webp" alt=""></a></div>
-            <ul>
+            <ul id="list">
                 <li><a href="#">À PROPOS</a></li>
                 <li><a href="#">MES EXPERIENCES</a></li>
                 <li><a href="#">MES PROJETS</a></li>
                 <li><a href="#">CONTACTEZ-MOI</a></li>
             </ul>
+            <i class="fas fa-bars" id="btn-menu" onclick="togglemenu();"></i>
         </nav>
         </div>
 
@@ -42,4 +43,16 @@
 
     </div>
 </body>
+<script>
+    var list = document.getElementById("list");
+    list.style.maxHeight = "0px";
+
+    function togglemenu(){
+        if (list.style.maxHeight == "0px"){
+            list.style.maxHeight = "200px";
+        }else{
+            list.style.maxHeight = "0px"
+        }
+    }
+</script>
 </html>
