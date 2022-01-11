@@ -146,7 +146,7 @@ header .titre button:hover{
     }
 }
 
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 500px){
     nav ul{
         width: 100%;
         position: absolute;
@@ -191,10 +191,10 @@ header .titre button:hover{
     }
     
     header .image .maphoto{
-    width: 122%;
-    height: 196%;
-    left: 20%;
-    top: 17px;
+        width: 122%;
+        height: 196%;
+        left: 20%;
+        top: 17px;
     }
 
     header .image .svg {
@@ -204,4 +204,56 @@ header .titre button:hover{
         left: 10%;
     }
 
+}
+
+@media screen and (max-height : 900px) and (min-height : 800px) {
+    header .image{
+        top: 51%;
+    }
+
+    header .titre{
+        left: 10%;
+        padding: 20px;
+        bottom: 30%;
+        font-size: 22px;
+    }
+
+    nav ul{
+        top:6.6%;
+    }
+}
+
+@media screen and (max-height : 700px) and (min-height : 600px) and (max-width : 350px){
+    header .image{
+        top: 45.4%;
+    }
+
+    header .titre{
+        left: 16%;
+        bottom: 38%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-height :900px) and (max-height : 950px) and (max-width : 450px){
+    header .image{
+        top: 52.4%;
+    }
+
+    header .titre{
+        left: 12%;
+        bottom: 25%;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    nav ul{
+        top:6.7%;
+    }
+}
+
+@media screen and (max-height : 750px) and (min-height : 700px) and (max-width : 450px){
+    header .image{
+        top: 40.5%;
+    }
 }
