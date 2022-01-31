@@ -3,6 +3,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(165, 69, 69);
 }
 
 /*HEADER*/
@@ -15,103 +16,8 @@ header{
 
 header .social{
     width: 100%;
-    height: 8%;
+    height: 53px;
     background-color: black;
-}
-
-header .navigation{
-    background-color: white;
-}
-
-nav{
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    width: 85%;
-    margin: auto;
-}
-
-nav ul{
-    margin-bottom: 5%;
-}
-
-nav ul li{
-    display: inline-block;
-    margin: 10px 15px;
-    position: relative;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    font-weight: 400;
-}
-
-
-nav #btn-menu{
-    font-size: 28px;
-    display: none;
-}
-
-nav ul li::after{
-    content: '';
-    height: 3px;
-    width: 0%;
-    background-color: #0F62FE; 
-    position: absolute;
-    left: 0;
-    bottom: -9px;
-    transition: 0.5s;
-}
-
-li:hover::after{
-    width: 100%;
-}
-
-nav .logo img{
-    width: 65px;
-    height: 65px;
-    margin-top: 5px;
-}
-
-header .image{
-    width: 30%;
-    height: 61%;
-    position: relative;
-    top: 10%;
-    left: 8%;
-}
-
-header .titre{
-    color: white;
-    float: right;
-    position: relative;
-    right: 10%;
-    top: 10%;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.btn{
-    padding: 18px 42px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid #0F62FE;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-header .titre button i{
-    margin-left: 10px;
-}
-
-header .titre button:hover{
-    color: #0F62FE;
-    background-color: white;
-    border: none;
 }
 
 header .social ul{
@@ -134,20 +40,183 @@ header .social ul li a:hover{
     color: #0F62FE;
 }
 
+header .navigation{
+    background-color: white;
+}
 
-/*Responsive Mobile*/
+nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+nav ul{
+    margin-bottom: 4%;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 15px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #0F62FE; 
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+nav #btn-menu{
+    font-size: 28px;
+    display: none;
+}
+
+nav .logo img{
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+
+.rowb{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    transform: translateY(25%);
+}
+
+.col img{
+    width: 340px;
+    height: 350px;
+}
+
+header .nom{
+    color: white;
+    text-align: left;
+}
+
+.nom h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.nom button{
+    margin-top: 40px;
+}
+
+.bttn{
+    padding: 14px 32px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #0F62FE;
+    border-radius: 25px;
+    font-size: small;
+    cursor: pointer;
+}
+
+header .nom button i{
+    margin-left: 10px;
+}
+
+header .nom button:hover{
+    color: #0F62FE;
+    background-color: white;
+    border: 1px solid white;
+}
+
+/*A PROPOS*/
+
+.a_propos{
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+}
+
+.a_propos h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.rowap{
+    display: flex;
+    justify-content: center;
+    transform: translateY(15vh);
+}
+
+.col_text_ap{
+    position: relative;
+    left: 5%;
+}
+
+.col_text_ap h3{
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.col_text_ap p{
+    color: #a3a3a3;
+}
+
+.col_cou{
+    text-align: center;
+}
+
+.col_cou span{
+    font-size: 36px;
+    font-weight: 600;
+    color: #0F62FE;
+}
+
+.col_cou h4{
+    color: #ffffff;
+}
+
+
+/*Responsive mobile*/
 
 @media screen and (max-width : 550px){
+
+    nav{
+        height: 15vh;
+    }
+
     nav ul{
         width: 100%;
         position: absolute;
-        top:9.1%;
+        top: 15vh;
         right: 0%;
         background-color: #ffffff;
         z-index: 2;
     }
 
+    header .social{
+        display: none;
+    }
+
     nav ul li{
+        margin-left: -3%;
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -166,144 +235,51 @@ header .social ul li a:hover{
         display: none;
     }
 
-    header .social{
-        display: none;
+    .rowb{
+        transform: translateY(5%);
+    }
+    
+    .col img{
+        width: 230px;
+        height: 250px;
+        transform: translateY(4vh);
     }
 
-    header .image{
-        width: 70%;
-        height: 41%;
-        top: 47%;
-        left: 15%;
-    }
-
-    header .titre{
-        position: absolute;
-        top: 22%;
-        left: 15%;
-        font-size: 16px;
+    header .nom{
+        color: white;
+        font-size: 30px;
         font-weight: 900;
+        transform: translateY(7vh);
+        text-align: center;
     }
 
-    header .navigation{
-        height: 12%;
+    .nom h2{
+        font-size: 25px;
+        font-weight: 500;
     }
 
-    nav ul{
-        top:9.3%;
-    }
-} 
+    /*A PROPOS*/
 
-
-@media screen and (min-height : 650px) and (max-height : 680px) and (min-width : 360px) and (max-width : 390px) {
-    header .image{
-        width: 70%;
-        height: 41%;
-        top: 45%;
-        left: 15%;
+    .col_text_ap{
+        margin-right: 0%;
+        margin-bottom: 10%
     }
 
-    header .titre{
-        position: absolute;
-        top: 18%;
-        left: 18%;
-        font-size: 16px;
-        font-weight: 900;
-    }
-}
-
-@media screen and (min-height : 720px) and (max-height : 750px) and (min-width : 400px) and (max-width : 440px) {
-    header .image{
-        width: 70%;
-        height: 41%;
-        top: 47%;
-        left: 15%;
+    .a_propos{
+        height: 150vh;
     }
 
-    header .titre{
-        position: absolute;
-        top: 22%;
-        left: 15%;
-        font-size: 16px;
-        font-weight: 900;
-    }
 
 }
 
-@media screen and (min-height : 795px) and (max-height : 840px) and (min-width : 360px) and (max-width : 390px){
-    header .image{
-        width: 80%;
-        height: 41%;
-        top: 47%;
-        left: 10%;
-    }
-
-    header .titre{
-        position: absolute;
-        top: 18%;
-        left: 16%;
-        font-size: 17px;
-        font-weight: 900;
-    }
-
-}
-
-@media screen and (min-height : 815px) and (max-height : 860px) and (min-width : 370px) and (max-width : 410px){
-    header .image{
-        top: 45%;
-        left: 12%;
-    }
-
-    header .titre{
-        top: 15%;
-        left: 18%;
-    }
-
-}
-
-@media screen and (min-height : 880px) and (max-height : 920px) and (min-width : 395px) and (max-width : 430px){
-    header .image{
-        top: 46%;
-        left: 14%;
-    }
-
-    header .titre{
-        top: 16%;
-        left: 19%;
-        font-size: 18px;
-    }
-
-}
-
-@media screen and (min-height : 640px) and (max-height : 670px) and (min-width : 310px) and (max-width : 330px){
-    header .titre{
-        top: 16%;
-        left: 15%;
-        font-size: 16px;
+@media screen and (min-height : 700px) {
+    .a_propos{
+        height: 145vh;
     }
 }
 
-@media screen and (min-height : 720px) and (max-height : 755px) and (min-width : 345px) and (max-width : 375px){
-    header .titre{
-        top: 15%;
-        left: 17%;
-        font-size: 17px;
+@media screen and (min-height : 800px) {
+    .a_propos{
+        height: 140vh;
     }
-
-}
-
-@media screen and (min-height : 900px) and (max-height : 930px) and (min-width : 400px) and (max-width : 425px){
-    header .image{
-        width: 80%;
-        height: 38%;
-        top: 47%;
-        left: 11%;
-    }
-
-    header .titre{
-        top: 18%;
-        left: 19%;
-        font-size: 18px;
-    }
-
 }

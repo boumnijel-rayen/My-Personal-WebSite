@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/shortcut.webp" type="image/png">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <title>Boumnijel Rayen</title>
 </head>
 <body>
     <!--HEADER-->
@@ -23,7 +22,7 @@
             </ul>
         </div>
 
-        <div class="navigation">
+        <div class="navigation" id="nav">
         <nav>
             <div class="logo"><a href="#"><img src="img/logo.webp" alt=""></a></div>
             <ul id="list">
@@ -33,29 +32,77 @@
                 <li><a href="#">MES PROJETS</a></li>
                 <li><a href="#">CONTACTEZ-MOI</a></li>
             </ul>
-            <i class="fas fa-bars" id="btn-menu" onclick="togglemenu();"></i>
+            <i class="fas fa-bars" id="btn-menu"  onclick="togglemenu();"></i>
         </nav>
         </div>
-
-        <img class="image" src="img/avatar.webp" alt="">
-
-        <div class="titre">
-            <h2>SALUT ! <br><font color="#0F62FE">JE SUIS BOUMNIJEL RAYEN .</font><br> DEVELOPPEUR WEB</h2>
-            <a href="#propos"><button class="btn">Voir Plus<i class="fas fa-chevron-down"></i></button></a>
+        <div class="container">
+            <div class="row rowb">
+              <div class="col">
+                <img class="image" src="img/avatar.webp" alt="">
+              </div>
+              <div class="col nom">
+                <h2>SALUT ! <br><font color="#0F62FE">JE SUIS BOUMNIJEL RAYEN .</font><br> DEVELOPPEUR WEB</h2>
+                <a href="#propos"><button class="bttn">Voir Plus<i class="fas fa-chevron-down"></i></button></a>
+              </div>
+            </div>
         </div>
     </header>
-    
-</body>
 
+    <!--A PROPOS-->
+    <section class="a_propos">
+        <h2><font color="#0F62FE">A</font> PROPOS</h2>
+
+        <div class="container">
+            <div class="row rowap">
+                <div class="col col_text_ap">
+                  <h3>MES INFORMATION PERSONEL</h3>
+                  <p>NOM : Boumnijel<br><br>PRENOM : Rayen<br><br>AGE : 20 ans<br><br>LANGUE : Français<br><br>FREELANCE : Disponible</p>
+                </div>
+                <div class="col-md-auto">
+                    <div class="row">
+                        <div class="col col_cou">
+                          <span class="counter" data-target="5"></span>
+                          <h4>Projet <br> <br></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col_cou">
+                          <span class="counter" data-target="180"></span><span>+</span>
+                          <h4>Tasse de<br>caffe</h4>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col col-lg-2">
+                    <div class="row">
+                        <div class="col col_cou">
+                          <span class="counter" data-target="3200"></span><span>+</span>
+                          <h4>Heurs de travail</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col_cou">
+                          <span class="counter" data-target="2"></span>
+                          <h4>Certificat <br> <br></h4>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="counter.js">
+    </script>
+</body>
 <script>
     var list = document.getElementById("list");
+
     list.style.maxHeight = "0px";
 
     function togglemenu(){
         if (list.style.maxHeight == "0px"){
             list.style.maxHeight = "200px";
         }else{
-            list.style.maxHeight = "0px"
+            list.style.maxHeight = "0px";
         }
     }
 </script>
