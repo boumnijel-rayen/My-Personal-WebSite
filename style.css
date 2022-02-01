@@ -198,6 +198,21 @@ header .nom button i{
     margin-left: 10px;
 }
 
+/*MES COMPETENCES*/
+
+#competences{
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+}
+
+#competences h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
 
 /*Responsive mobile*/
 
@@ -294,6 +309,42 @@ header .nom button i{
 @media screen and (min-height : 800px) and (max-width : 550px){
     .a_propos{
         height: 140vh;
+    }
+}
+
+@media screen and (min-width : 280px) and (max-width : 400px) and (min-height : 400px) and (max-height : 550px){
+    .col img{
+        width: 180px;
+        height: 190px;
+    }
+
+    .nom h2{
+        font-size: 20px;
+    }
+
+    .a_propos h2{
+        font-size: 28px;
+    }
+
+    .col_text_ap h3{
+        font-size: 18px;
+    }
+    
+    .col_text_ap p{
+        font-size: 15px;
+    }
+
+    .col_cou span{
+        font-size: 20px;
+    }
+    
+    .col_cou h4{
+        font-size: 16px;
+    }
+
+    .bttn{
+        padding: 10px 30px;
+        font-size: x-small;
     }
 }
 
@@ -455,5 +506,221 @@ header .nom button i{
 
     nav ul{
         margin-bottom: 3%;
+    }
+}
+
+@media screen  and (min-width : 1880px) and (max-width : 2050px) and (min-height : 1150px) and (max-height : 1300px){
+    .rowb{
+        transform: translateY(50%);
+    }
+
+    .col img{
+        width: 540px;
+        height: 550px;
+        position: relative;
+        right: 15%;
+    }
+
+    .nom h2{
+        font-size: 60px;
+    }
+
+    .a_propos h2{
+        font-size: 58px;
+    }
+
+    .col_text_ap h3{
+        font-size: 32px;
+    }
+    
+    .col_text_ap p{
+        font-size: 25px;
+    }
+
+    .col_cou span{
+        font-size: 52px;
+    }
+    
+    .col_cou h4{
+        font-size: 32px;
+    }
+
+    .bttn{
+        padding: 18px 38px;
+        font-size: larger;
+    }
+
+    .col_text_ap{
+        left: 0%;
+    }
+
+    nav ul{
+        margin-bottom: 3%;
+    }
+}
+
+
+/*Responsive Tablet*/
+
+@media screen and (min-width : 700px) and (max-width : 850px) and (min-height : 960px) and (max-height : 1100px){
+    .rowb{
+        transform: translateY(50%);
+    }
+
+    .col img{
+        width: 380px;
+        height: 390px;
+    }
+
+    .nom h2{
+        font-size: 40px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    nav ul li{
+        margin: 10px 5px;
+    }
+
+    nav ul{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width : 1300px) and (max-width : 1450px) and (min-height : 960px) and (max-height : 1100px){
+    .rowb{
+        transform: translateY(40%);
+    }
+
+    .col img{
+        width: 480px;
+        height: 490px;
+    }
+
+    .nom h2{
+        font-size: 50px;
+    }
+
+    .a_propos h2{
+        font-size: 58px;
+    }
+
+    .col_text_ap h3{
+        font-size: 32px;
+    }
+    
+    .col_text_ap p{
+        font-size: 25px;
+    }
+
+    .col_cou span{
+        font-size: 52px;
+    }
+    
+    .col_cou h4{
+        font-size: 32px;
+    }
+
+    .bttn{
+        padding: 18px 38px;
+        font-size: larger;
+    }
+}
+
+@media screen and (min-width : 960px) and (max-width : 1100px) and (min-height : 1300px) and (max-height : 1420px){
+    .rowb{
+        transform: translateY(65%);
+    }
+
+    .col img{
+        width: 480px;
+        height: 490px;
+    }
+
+    .nom h2{
+        font-size: 50px;
+    }
+
+    .a_propos h2{
+        font-size: 58px;
+    }
+
+    .col_text_ap h3{
+        font-size: 32px;
+    }
+    
+    .col_text_ap p{
+        font-size: 25px;
+    }
+
+    .col_cou span{
+        font-size: 48px;
+    }
+    
+    .col_cou h4{
+        font-size: 30px;
+    }
+
+    .bttn{
+        padding: 18px 38px;
+        font-size: larger;
+    }
+
+    nav ul{
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (min-width : 780px) and (max-width : 900px) and (min-height : 1100px) and (max-height : 1250px){
+    .rowb{
+        transform: translateY(70%);
+    }
+
+    .col img{
+        width: 380px;
+        height: 390px;
+    }
+
+    .nom h2{
+        font-size: 40px;
+    }
+
+    .a_propos h2{
+        font-size: 58px;
+    }
+
+    .col_text_ap h3{
+        font-size: 28px;
+    }
+    
+    .col_text_ap p{
+        font-size: 20px;
+    }
+
+    .col_cou span{
+        font-size: 40px;
+    }
+    
+    .col_cou h4{
+        font-size: 26px;
+    }
+
+    .bttn{
+        padding: 18px 38px;
+        font-size: larger;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    nav ul li{
+        margin: 10px 5px;
+    }
+
+    nav ul{
+        margin-bottom: 6%;
     }
 }
