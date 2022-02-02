@@ -203,7 +203,7 @@ header .nom button i{
 #competences{
     background-color: black;
     width: 100%;
-    height: 90vh;
+    height: 210vh;
 }
 
 #competences h2{
@@ -213,6 +213,176 @@ header .nom button i{
     font-weight: 600;
 }
 
+.rowcom{
+    padding: 40px;
+}
+
+.rowcom .col{
+    padding: 9em 6em;
+    position: relative;
+}   
+
+.rowcom svg{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.rowcom svg circle{
+    fill: none;
+    stroke: #0F62FE;
+    stroke-width: 10px;
+    transform: translate(5px,5px);
+    stroke-dasharray: 590px;
+    stroke-dashoffset: 590px;
+    stroke-linecap: round;
+}
+
+svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #969696;
+}
+
+svg .c1:nth-child(2){
+    animation: circle1 2s forwards;
+}
+
+svg .c2:nth-child(2){
+    animation: circle2 2s forwards;
+}
+
+svg .c3:nth-child(2){
+    animation: circle3 2s forwards;
+}
+
+svg .c4:nth-child(2){
+    animation: circle4 2s forwards;
+}
+
+svg .c5:nth-child(2){
+    animation: circle5 2s forwards;
+}
+
+svg .c6:nth-child(2){
+    animation: circle6 2s forwards;
+}
+
+svg .c7:nth-child(2){
+    animation: circle7 2s forwards;
+}
+
+svg .c8:nth-child(2){
+    animation: circle8 2s forwards;
+}
+
+svg .c9:nth-child(2){
+    animation: circle9 2s forwards;
+}
+
+svg .c10:nth-child(2){
+    animation: circle10 2s forwards;
+}
+
+svg .c11:nth-child(2){
+    animation: circle11 2s forwards;
+}
+
+@keyframes circle1 {
+    to{
+        stroke-dashoffset: 35.4px;
+    }
+}
+
+@keyframes circle2 {
+    to{
+        stroke-dashoffset: 106.2px;
+    }
+}
+
+@keyframes circle3 {
+    to{
+        stroke-dashoffset: 147.5px;
+    }
+}
+
+@keyframes circle4 {
+    to{
+        stroke-dashoffset: 88.5px;
+    }
+}
+
+@keyframes circle5 {
+    to{
+        stroke-dashoffset: 59px;
+    }
+}
+
+@keyframes circle6 {
+    to{
+        stroke-dashoffset: 23.6px;
+    }
+}
+
+@keyframes circle7 {
+    to{
+        stroke-dashoffset: 165.2px;
+    }
+}
+
+@keyframes circle8 {
+    to{
+        stroke-dashoffset: 259.6px;
+    }
+}
+
+@keyframes circle9 {
+    to{
+        stroke-dashoffset: 47.2px;
+    }
+}
+
+@keyframes circle10 {
+    to{
+        stroke-dashoffset: 82.6px;
+    }
+}
+
+@keyframes circle11 {
+    to{
+        stroke-dashoffset: 129.8px;
+    }
+}
+
+.rowcom span{
+    
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.rowcom .col h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,490%);
+}
+
+.chiffre{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.chiffre i{
+    font-size: 42px;
+    color: #a5a5a5;
+}
 
 /*Responsive mobile*/
 
@@ -297,6 +467,11 @@ header .nom button i{
         display: flex;
         justify-content: center;
         text-decoration: none;
+    }
+
+    /*MES COMPETENCES*/
+    #competences{
+        height: 540vh;
     }
 }
 
