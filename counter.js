@@ -13,7 +13,7 @@ counters.forEach(counter => {
 
         if(c < target){
             counter.innerText = `${Math.ceil(c + increament)}`;
-            setTimeout(updateCounter, 6);
+            setTimeout(updateCounter, 600);
         }
     };
     updateCounter();
